@@ -2,6 +2,12 @@
 - name: Windows playbook
   hosts: all
 
+  vars:
+    names:
+      - Rajneesh
+      - Chris
+      - Gareth
+
   tasks:
 
   - name: Echo event
@@ -11,3 +17,5 @@
     win_file:
       path: C:\TempWorkshop2\
       state: directory
+      
+  - debug: var=names
