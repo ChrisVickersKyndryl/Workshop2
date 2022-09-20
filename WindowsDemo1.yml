@@ -17,5 +17,5 @@
     win_command: whoami
     register: command_output
       
-  - debug:
-      var: "The output from whoami is: '{{ command_output.stdout }}'"
+  - name: Debug Message
+    debug: msg="The output from whoami is: '{{ command_output.stdout }}'"
