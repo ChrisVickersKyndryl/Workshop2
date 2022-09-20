@@ -1,0 +1,8 @@
+---
+- name: Windows playbook
+  hosts: all
+
+  tasks:
+
+  - name: Echo event
+    win_shell: echo "This is my playbook"
