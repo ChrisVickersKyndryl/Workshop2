@@ -6,3 +6,8 @@
 
   - name: Echo event
     win_shell: echo "This is my playbook"
+    
+  - name: Create directory structure
+    win_file:
+      path: C:\TempWorkshop2\
+      state: directory
