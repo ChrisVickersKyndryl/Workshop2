@@ -22,4 +22,4 @@
     register: command_output
       
   - name: Debug Message
-    debug: msg="The output from whoami is: '{{ command_output.stdout }}'"
+    debug: msg="The output from whoami is '{{ command_output.stdout }}'"
