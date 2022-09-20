@@ -18,4 +18,4 @@
     register: command_output
       
   - debug:
-      var: "The output from whoami is: '{{ command_output }}'"
+      var: "The output from whoami is: '{{ command_output.stdout }}'"
