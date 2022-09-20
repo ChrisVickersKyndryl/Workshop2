@@ -13,10 +13,9 @@
   - name: Echo event
     win_shell: echo "This is my playbook"
     
-  - name: Create directory structure
-    win_file:
-      path: C:\TempWorkshop2\
-      state: directory
+  - name: Run command
+    win_command: whoami
+    register: command_output
       
   - debug:
-      var: "'{{ names }}'"
+      var: "The output from whoami is: '{{ command_output }}'"
