@@ -18,4 +18,5 @@
       path: C:\TempWorkshop2\
       state: directory
       
-  - debug: var=names
+  - debug:
+      var: "{{ names }}"
