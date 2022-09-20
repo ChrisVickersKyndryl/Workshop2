@@ -19,4 +19,4 @@
       state: directory
       
   - debug:
-      var: "{{ names }}"
+      var: "'{{ names }}'"
