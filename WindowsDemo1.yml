@@ -1,6 +1,7 @@
 ---
 - name: Windows playbook
   hosts: all
+  gather_facts: yes
 
   vars:
     names:
@@ -9,6 +10,9 @@
       - Gareth
 
   tasks:
+
+  - name: Windows or Linux
+    debug: msg="{{ ansible_system }}"
 
   - name: Echo event
     win_shell: echo "This is my playbook"
