@@ -3,19 +3,8 @@
   hosts: all
   gather_facts: no
 
-  vars:
-    names:
-      - Rajneesh
-      - Chris
-      - Gareth
-
   tasks:
+  - name: Include some tasks from another file
+    include_tasks: imported_tasks.yml
 
-  - name: System version
-    debug: msg="{{ ansible_system }}"
-    ignore_errors: "{{ continue_after_error }}"
-
-  - name: Linux
-    debug: msg="{{ item }}"
-    loop: "{{ names }}"
     
