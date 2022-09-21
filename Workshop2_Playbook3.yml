@@ -12,7 +12,7 @@
 
   - name: Run on Ansible server
     debug: msg="{{ my_text }}"
-    delegate_to: 127.0.0.1
+    delegate_to: localhost
   
   - name: Include some tasks from another file
     include_tasks: imported_tasks.yml
