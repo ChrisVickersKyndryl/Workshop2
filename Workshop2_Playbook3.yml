@@ -11,6 +11,10 @@
 
   tasks:
 
+  - name: System version
+    debug: msg="{{ ansible_system }}"
+    ignore_errors: True
+
   - name: Linux
     debug: msg="{{ item }}"
     loop: "{{ names }}"
