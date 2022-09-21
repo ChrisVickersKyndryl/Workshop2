@@ -3,7 +3,10 @@
   hosts: all
   gather_facts: no
   vars:
-    my_text: This is my text that I wrote
+    my_text: >
+      This is my text that I wrote
+      
+      this is the third line
 
   tasks:
 
