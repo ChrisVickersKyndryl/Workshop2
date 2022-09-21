@@ -13,7 +13,7 @@
 
   - name: System version
     debug: msg="{{ ansible_system }}"
-    ignore_errors: False
+    ignore_errors: "{{ continue_after_error }}"
 
   - name: Linux
     debug: msg="{{ item }}"
