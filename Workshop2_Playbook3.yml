@@ -13,7 +13,5 @@
 
   - name: Linux
     debug: msg="{{ item }}"
-    loop:
-    - c:\file1.txt
-    - c:\file2.txt
+    loop: "{{ names }}"
     
