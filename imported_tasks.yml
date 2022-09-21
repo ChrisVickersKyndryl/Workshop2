@@ -1,0 +1,3 @@
+---
+- name: Echo command
+  win_shell: echo "This is an imported task"
