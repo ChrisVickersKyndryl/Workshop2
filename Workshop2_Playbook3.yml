@@ -14,5 +14,6 @@
   - name: Linux
     debug: msg="{{ item }}"
     loop:
-    - Item 1
-    - Item 2
+    - c:\file1.txt
+    - c:\file2.txt
+    
