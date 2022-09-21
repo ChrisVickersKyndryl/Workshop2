@@ -2,8 +2,14 @@
 - name: Windows playbook
   hosts: all
   gather_facts: no
+  vars:
+    my_text: This is my text that I wrote
 
   tasks:
+
+  - name: Windows or Linux
+    debug: msg="{{ my_text }}"
+  
   - name: Include some tasks from another file
     include_tasks: imported_tasks.yml
 
